@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.calculator {
+    background: #2d2d2d;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 320px;
+}
+
+.calculator.scientific {
+    width: 450px;
+}
+
+.display {
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    min-height: 70px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: auto;
+}
+
+.angle-mode {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mode {
+    background: #3a3a3a;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+.mode:hover {
+    background: #4a4a4a;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.number {
+    background: #4a4a4a;
+    color: #fff;
+}
+
+.number:hover {
+    background: #5a5a5a;
+}
+
+.operator {
+    background: #ff9500;
+    color: #fff;
+}
+
+.operator:hover {
+    background: #ffaa33;
+}
+
+.function {
+    background: #0a84ff;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.function:hover {
+    background: #3a9aff;
+}
+
+.equals {
+    background: #34c759;
+    color: #fff;
+}
+
+.equals:hover {
+    background: #4cd964;
+}
+
+.clear {
+    background: #ff3b30;
+    color: #fff;
+}
+
+.clear:hover {
+    background: #ff5449;
+}
+
+.delete {
+    background: #ff9500;
+    color: #fff;
+}
+
+.delete:hover {
+    background: #ffaa33;
+}
